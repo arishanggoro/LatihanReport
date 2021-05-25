@@ -105,6 +105,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="wehrisiniygdiubahcokk.resx">
+      <DependentUpon>wehrisiniygdiubahcokk.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Mahasiswa_P5DataSet.xsc">
       <DependentUpon>Mahasiswa_P5DataSet.xsd</DependentUpon>
     </None>
