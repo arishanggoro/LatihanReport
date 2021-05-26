@@ -30,6 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nimDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tgllahirDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jeniskelaminDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.alamatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.teleponDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idprodiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.msmhsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mahasiswa_P5DataSet = new LatihanReport.Mahasiswa_P5DataSet();
             this.msmhsTableAdapter = new LatihanReport.Mahasiswa_P5DataSetTableAdapters.msmhsTableAdapter();
@@ -38,13 +45,6 @@
             this.myPracticeDataSet = new LatihanReport.MyPracticeDataSet();
             this.tBMPRODUCTBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tB_M_PRODUCTTableAdapter = new LatihanReport.MyPracticeDataSetTableAdapters.TB_M_PRODUCTTableAdapter();
-            this.nimDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tgllahirDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.jeniskelaminDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.alamatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.teleponDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idprodiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.msmhsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswa_P5DataSet)).BeginInit();
@@ -71,6 +71,48 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(637, 316);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // nimDataGridViewTextBoxColumn
+            // 
+            this.nimDataGridViewTextBoxColumn.DataPropertyName = "nim";
+            this.nimDataGridViewTextBoxColumn.HeaderText = "nim";
+            this.nimDataGridViewTextBoxColumn.Name = "nimDataGridViewTextBoxColumn";
+            // 
+            // namaDataGridViewTextBoxColumn
+            // 
+            this.namaDataGridViewTextBoxColumn.DataPropertyName = "nama";
+            this.namaDataGridViewTextBoxColumn.HeaderText = "nama";
+            this.namaDataGridViewTextBoxColumn.Name = "namaDataGridViewTextBoxColumn";
+            // 
+            // tgllahirDataGridViewTextBoxColumn
+            // 
+            this.tgllahirDataGridViewTextBoxColumn.DataPropertyName = "tgl_lahir";
+            this.tgllahirDataGridViewTextBoxColumn.HeaderText = "tgl_lahir";
+            this.tgllahirDataGridViewTextBoxColumn.Name = "tgllahirDataGridViewTextBoxColumn";
+            // 
+            // jeniskelaminDataGridViewTextBoxColumn
+            // 
+            this.jeniskelaminDataGridViewTextBoxColumn.DataPropertyName = "jenis_kelamin";
+            this.jeniskelaminDataGridViewTextBoxColumn.HeaderText = "jenis_kelamin";
+            this.jeniskelaminDataGridViewTextBoxColumn.Name = "jeniskelaminDataGridViewTextBoxColumn";
+            // 
+            // alamatDataGridViewTextBoxColumn
+            // 
+            this.alamatDataGridViewTextBoxColumn.DataPropertyName = "alamat";
+            this.alamatDataGridViewTextBoxColumn.HeaderText = "alamat";
+            this.alamatDataGridViewTextBoxColumn.Name = "alamatDataGridViewTextBoxColumn";
+            // 
+            // teleponDataGridViewTextBoxColumn
+            // 
+            this.teleponDataGridViewTextBoxColumn.DataPropertyName = "telepon";
+            this.teleponDataGridViewTextBoxColumn.HeaderText = "telepon";
+            this.teleponDataGridViewTextBoxColumn.Name = "teleponDataGridViewTextBoxColumn";
+            // 
+            // idprodiDataGridViewTextBoxColumn
+            // 
+            this.idprodiDataGridViewTextBoxColumn.DataPropertyName = "id_prodi";
+            this.idprodiDataGridViewTextBoxColumn.HeaderText = "id_prodi";
+            this.idprodiDataGridViewTextBoxColumn.Name = "idprodiDataGridViewTextBoxColumn";
             // 
             // msmhsBindingSource
             // 
@@ -119,48 +161,6 @@
             // tB_M_PRODUCTTableAdapter
             // 
             this.tB_M_PRODUCTTableAdapter.ClearBeforeFill = true;
-            // 
-            // nimDataGridViewTextBoxColumn
-            // 
-            this.nimDataGridViewTextBoxColumn.DataPropertyName = "nim";
-            this.nimDataGridViewTextBoxColumn.HeaderText = "nim";
-            this.nimDataGridViewTextBoxColumn.Name = "nimDataGridViewTextBoxColumn";
-            // 
-            // namaDataGridViewTextBoxColumn
-            // 
-            this.namaDataGridViewTextBoxColumn.DataPropertyName = "nama";
-            this.namaDataGridViewTextBoxColumn.HeaderText = "nama";
-            this.namaDataGridViewTextBoxColumn.Name = "namaDataGridViewTextBoxColumn";
-            // 
-            // tgllahirDataGridViewTextBoxColumn
-            // 
-            this.tgllahirDataGridViewTextBoxColumn.DataPropertyName = "tgl_lahir";
-            this.tgllahirDataGridViewTextBoxColumn.HeaderText = "tgl_lahir";
-            this.tgllahirDataGridViewTextBoxColumn.Name = "tgllahirDataGridViewTextBoxColumn";
-            // 
-            // jeniskelaminDataGridViewTextBoxColumn
-            // 
-            this.jeniskelaminDataGridViewTextBoxColumn.DataPropertyName = "jenis_kelamin";
-            this.jeniskelaminDataGridViewTextBoxColumn.HeaderText = "jenis_kelamin";
-            this.jeniskelaminDataGridViewTextBoxColumn.Name = "jeniskelaminDataGridViewTextBoxColumn";
-            // 
-            // alamatDataGridViewTextBoxColumn
-            // 
-            this.alamatDataGridViewTextBoxColumn.DataPropertyName = "alamat";
-            this.alamatDataGridViewTextBoxColumn.HeaderText = "alamat";
-            this.alamatDataGridViewTextBoxColumn.Name = "alamatDataGridViewTextBoxColumn";
-            // 
-            // teleponDataGridViewTextBoxColumn
-            // 
-            this.teleponDataGridViewTextBoxColumn.DataPropertyName = "telepon";
-            this.teleponDataGridViewTextBoxColumn.HeaderText = "telepon";
-            this.teleponDataGridViewTextBoxColumn.Name = "teleponDataGridViewTextBoxColumn";
-            // 
-            // idprodiDataGridViewTextBoxColumn
-            // 
-            this.idprodiDataGridViewTextBoxColumn.DataPropertyName = "id_prodi";
-            this.idprodiDataGridViewTextBoxColumn.HeaderText = "id_prodi";
-            this.idprodiDataGridViewTextBoxColumn.Name = "idprodiDataGridViewTextBoxColumn";
             // 
             // Form1
             // 

@@ -11,6 +11,7 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
 using Microsoft.Office.Interop.Excel;
+using System.Configuration;
 
 namespace LatihanReport
 {
@@ -19,6 +20,14 @@ namespace LatihanReport
         public Form1()
         {
             InitializeComponent();
+
+            //cara ambil dari app setting dan masukkan ke variable 
+            String valueTestString = ConfigurationManager.AppSettings["TestString"];
+            int valueTestAngka = int.Parse(ConfigurationManager.AppSettings["TestAngka"]);
+
+            //menampilkan variable via message box
+            MessageBox.Show("Isi TestString : " + valueTestString);
+            MessageBox.Show("Isi TestAngka : " + valueTestAngka);
         }
 
         private void Form1_Load(object sender, EventArgs e)
